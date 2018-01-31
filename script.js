@@ -7,6 +7,7 @@ $(document).ready(function(){
 	});
 
 	$('.js-hello').click(function(){
+		$('.bubble').toggleClass('-visible');
 		$('.bubble').text(heroSpeech);
 	});
 
