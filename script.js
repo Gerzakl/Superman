@@ -2,17 +2,7 @@ $(document).ready(function(){
 
 	 $('.js-Speak').click(function(){
 		 var inputText = $('.js-text').val();
-
-		 if(inputText ===''){
-		 	$('.bubble').addClass('-visible');
-		 	$('.bubble').text('Ну что сказать...');
-	 		setTimeout(function() {
-	 			$('.bubble').removeClass('-visible')
-	 		}, 2000);
-		 } else{
-		 	showBubble(inputText);
-		 }
-
+		 showBubble($('.js-text1').val() + $('.js-text2').val());
 	 });
 
 	 function showBubble(text) {
