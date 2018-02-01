@@ -1,15 +1,26 @@
 $(document).ready(function(){
 
-	var heroSpeech = 'i am Barman';
+	 $('.js-Speak').click(function(){
+		 var inputText = $('.js-text').val();
 
-	$('.js-hideshow').click(function(){
-		$('.hero').toggleClass('-invisible');
-	});
+		 if(inputText ===''){
+		 	$('.bubble').addClass('-visible');
+		 	$('.bubble').text('Ну что сказать...');
+	 		setTimeout(function() {
+	 			$('.bubble').removeClass('-visible')
+	 		}, 2000);
+		 } else{
+		 	showBubble(inputText);
+		 }
 
-	$('.js-hello').click(function(){
-		$('.bubble').toggleClass('-visible');
-		$('.bubble').text(heroSpeech);
-	});
+	 });
+
+	 function showBubble(text) {
+	 	$('.bubble').addClass('-visible');
+	 	$('.bubble').text(text);
+	 	setTimeout(function() {
+	 		$('.bubble').removeClass('-visible')
+	 	}, 2000);
+	 }
 
 });
-

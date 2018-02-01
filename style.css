@@ -49,10 +49,38 @@ body{
 	border-radius: 20px;
 	text-align: center;
 	line-height: 150px;
-	transition: .2s;
+	transition: .3s;
 	opacity: 0;
 }
 
 .bubble.-visible{
 	opacity: 1;
+}
+
+button,
+input{
+	padding: 6px;
+	background-color: #dedbee;
+	border-radius: 4px;
+	outline: none;
+	font-size: 14px;
+	font-weight: 900px;
+}
+
+input{
+	margin: 0 20px 0 20px;
+	border: none;
+}
+
+button{
+	background-color: white;
+	color: #f40a11;
+}
+
+button:hover{
+	background-color: #f4f4f4;
+}
+
+button:active{
+	background-color: #dedbee;
 }
