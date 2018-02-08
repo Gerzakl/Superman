@@ -43,12 +43,12 @@ body{
 	top: 120px;
 	left: 500px;
 	transform: translate(-50%);
-	width: 250px;
-	height: 150px;
+	min-width: 250px;
+	min-height: 150px;
 	background-color: white;	
 	border-radius: 20px;
+	padding-top: 56px;
 	text-align: center;
-	line-height: 150px;
 	transition: .3s;
 	opacity: 0;
 }
@@ -83,4 +83,31 @@ button:hover{
 
 button:active{
 	background-color: #dedbee;
+}
+
+.calc-panel{
+	margin-bottom: 20px;
+}
+
+.bubble-test{
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.array-panel{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	width: 350px;
+	min-height: 150px;
+	background-color: #565656;
+	border: 4px solid black;
+	border-radius: 20px;
+}
+
+.test-item{
+	min-width: 100px;
+	min-height: 100px;
+	background-color: white;
+	border-radius: 20px;
 }
