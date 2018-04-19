@@ -105,9 +105,12 @@ button:active{
 	border-radius: 20px;
 }
 
-.test-item{
+.test-item{ 
 	min-width: 100px;
 	min-height: 100px;
 	background-color: white;
 	border-radius: 20px;
+	text-align: center;
+	padding-top: 10px;
+	transition: 
 }
